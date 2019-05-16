@@ -69,57 +69,7 @@ a:active {
 			
 		</style>
 
-	<!-- Add JavaScript variables and functions for the ADAPTT Kill Counter: -->
-	<script type="text/javascript">
-
-		// Global variables: ___________________________________________________________________
-
-		var counts = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
-		var rate = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
-		
-		// Functions: __________________________________________________________________________
-		
-		function StartKillCounter() {
-			var millions = [ 90000, 45895, 2262, 1244, 857, 691, 533, 515, 345, 292, 65, 63, 23, 16, 4, 4, 3, 2 ];
-			var perSecond = 8;
-			for (var i = 0; i < counts.length; ++i) 
-				rate[i] = millions[i] * 1000000 / 365 / 24 / 60 / 60 / perSecond;
-			setInterval(NewCounts, 1000 / perSecond);
-		}
-		
-		function NewCounts() {
-			var num, thous, str;
-			for (var i = 0; i < counts.length; ++i) {
-				counts[i] += rate[i];
-				num = Math.round(counts[i]);
-				str = "";
-				while (num > 1000) {
-					thous = num % 1000;
-					if (thous < 10)
-						thous = "00" + thous;
-					else if (thous < 100)
-						thous = "0" + thous;
-					str = "," + thous + str;
-					num = Math.floor(num / 1000);
-				}
-				str = num + str;
-				document.getElementById("count" + i).innerHTML = str;
-			}
-		}
-	</script>
-
-	<!-- Add local CSS for the ADAPTT Kill Counter. 
-		  Please Note: This code block MUST contain AT MINIMUM the following code: -->
-	<style type="text/css">
-		span#count0, span#count1, span#count2, span#count3, span#count4, span#count5, 
-		span#count6, span#count7, span#count8, span#count9, span#count10, span#count11, 
-		span#count12, span#count13, span#count14, span#count15, span#count16, span#count17 { 
-			display: inline; 
-		}
-	</style>
-		
-		<!--end kill counter-->
-
+	
 </head>
 	
 	<body>
@@ -131,68 +81,10 @@ a:active {
 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/621313002%3Fsecret_token%3Ds-QaFdq&color=%23000000&
 auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 		<br><br>
-			
-		<img src="1555663511603.gif" alt="+_=-=_+_=+_+--=-+_+" class="responsive" width="540" height="540">
-			
-		<br><br><br>
-			
-			A few works:<br><br>
-		  <a href='https://soundcloud.com/alchvmist/s9000r' target="_blank">S9000r</a><br><br>
-		  <a href='https://soundcloud.com/alchvmist/patterns' target="_blank">Patterns</a><br><br>
-		  <a href='https://soundcloud.com/alchvmist/space-is-nothing' target="_blank">Space is Nothing</a><br><br>
-		  <a href='https://soundcloud.com/alchvmist/aqua' target="_blank">Aqua</a><br><br>
-		  <a href='https://soundcloud.com/alchvmist/teien-no-shikai-sha' target="_blank">Teien no Shikai-sha</a><br><br>
-		  <a href='https://soundcloud.com/alchvmist/grep' target="_blank">Grep</a><br><br>
-		  <a href='https://soundcloud.com/alchvmist/retour' target="_blank">Retour</a><br><br><br>
-		  
-		 A L C H V M I S T _<br><br>
-		
-			
-		  <a href='http://vegankit.com/' target="_blank">Don't know where to start with Veganism? Click here. <3</a><br><br><br>
-			  
-			  <!-- Begin the ADAPTT Kill Counter: -->
-	
-	<p>
-		<span id="count0">0</span>&nbsp;marine animals<br />
-		<span id="count1">0</span>&nbsp;chickens<br />
-		<span id="count2">0</span>&nbsp;ducks<br />
-		<span id="count3">0</span>&nbsp;pigs<br />
-		<span id="count4">0</span>&nbsp;rabbits<br />
-		<span id="count5">0</span>&nbsp;turkeys<br />
-		<span id="count6">0</span>&nbsp;geese<br />
-		<span id="count7">0</span>&nbsp;sheep<br />
-		<span id="count8">0</span>&nbsp;goats<br />
-		<span id="count9">0</span>&nbsp;cows and calves<br />
-		<span id="count10">0</span>&nbsp;rodents<br />
-		<span id="count11">0</span>&nbsp;pigeons and other birds<br />
-		<span id="count12">0</span>&nbsp;buffaloes<br />
-		<span id="count13">0</span>&nbsp;dogs<br />
-		<span id="count14">0</span>&nbsp;cats<br />
-		<span id="count15">0</span>&nbsp;horses<br />
-		<span id="count16">0</span>&nbsp;donkeys and mules<br />
-		<span id="count17">0</span>&nbsp;camels and other camelids
-		<br><br>
-	</p>
-	
-	<table width="300" cellspacing="0" cellpadding="0" table align= "center">
-  <tr>
-	  <td width="50"></td>
-  </tr>
-  <tr>
-    <td><p>These are the numbers of animals killed worldwide by the meat, egg, and dairy industries since you opened this webpage.</p><p>These numbers do not include the many millions of animals killed each year in vivisection laboratories.</p><p>They do not include the millions of dogs and cats killed in animal shelters every year.</p><p>They do not include the animals who died while held captive in the animal-slavery enterprises of circuses, rodeos, zoos, and marine parks.</p><p>They do not include the animals killed while pressed into such blood sports as bullfighting, cockfighting, dogfighting, and bear-baiting, nor do they include horses and greyhounds who were exterminated after they were no longer deemed suitable for racing.</p></td>
-  </tr>
-</table>
-	<br><br>
-<a href='https://www.adaptt.org/' target="_blank">https://www.adaptt.org/</a>
+			A L C H V M I S T _
 		
 	
-	<br><br><br><br><br><br>
-	<script type="text/javascript">
-		StartKillCounter();
-	</script>
-			  <!-- end the ADAPTT Kill Counter: -->
-			  
-	<img src="sphere.gif" alt="+_=-=_+_=+_+--=-+_+_=" class="responsive" width="540" height="540"><br><br><br>
+
 
 		  </div>
 			
